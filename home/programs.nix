@@ -1,6 +1,6 @@
-{config, pkgs, ...}
+{inputs, config, pkgs, ...} :
 {
-	home.programs = with pkgs; [
+	home.packages = with pkgs; [
 		# Bureautique
 		firefox
 		thunderbird
@@ -27,10 +27,12 @@
 		python3
 
 		# Editor
-		nvim
+		neovim
 
 		# Utils
-		clang-format
+		qemu
+		libvirt
+		virt-manager
 		clang-tools
 		doxygen
 		pkg-config

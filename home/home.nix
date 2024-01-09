@@ -1,4 +1,4 @@
-{config, pkgs, arch, host_name, user, ...}
+{inputs, config, pkgs, arch, host_name, user, ...} :
 {
 	home.username = user;
 	home.homeDirectory = "/home/${user}";
@@ -8,4 +8,5 @@
 	];
 
 	programs.home-manager.enable = true;
+	home.stateVersion = "23.11";
 }
