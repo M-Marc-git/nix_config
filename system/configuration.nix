@@ -6,11 +6,15 @@
 
 	boot.loader.systemd-boot.enable = true;
 	boot.initrd.kernelModules = [
+		"vfio_pci"
+		"vfio"
+		"vfio_iommu_type1"
+		"vfio_virqfd"
 		"amdgpu"
 	];
 	boot.kernelParams = [
-		"video=DP-1:1920x1080@165"
-		"video=DP-2:1920x1080@165"
+		"amd_iommu=on"
+		"vfio-pic.ids=1002:1638,1002:1637"
 	];
 	networking.hostName = host_name;
 
