@@ -39,7 +39,7 @@
 			"super + shift + {1-9,0" = "bspc node -d '^{1-9,10}'";
 			"super + shift + f" = "bspc node -t fullscreen";
 			"super + Return" = "exec alacritty";
-			"super + @d" = "exec 'rofi -show drun'";
+			"super + @d" = "exec rofi -show drun";
 		};
 	};
 }
