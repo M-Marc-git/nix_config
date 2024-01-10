@@ -38,5 +38,6 @@
 		pkg-config
 		jetbrains.clion
 		discord
+		alacritty
 	];
 }

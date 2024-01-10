@@ -4,6 +4,7 @@
 	home.homeDirectory = "/home/${user}";
 
 	imports = [
+		./config/config.nix
 		./programs.nix
 	];
 
