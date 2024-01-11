@@ -2,6 +2,7 @@
 {
 	imports = [
 		./bspwm.nix
+		./nvim.nix
 		./rofi.nix
 	];
 }

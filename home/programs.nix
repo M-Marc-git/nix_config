@@ -26,9 +26,6 @@
 		# Interpretor
 		python3
 
-		# Editor
-		neovim
-
 		# Utils
 		qemu
 		libvirt
@@ -36,7 +33,6 @@
 		clang-tools
 		doxygen
 		pkg-config
-		jetbrains.clion
 		discord
 		alacritty
 	];

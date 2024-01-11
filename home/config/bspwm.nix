@@ -3,14 +3,14 @@
 	xsession.windowManager.bspwm = {
 		enable = true;
 		monitors = {
-			DP-1 = [
+			DisplayPort-0 = [
 				"I"
 				"II"
 				"III"
 				"IV"
 				"V"
 			];
-			DP-2 = [
+			DisplayPort-1 = [
 				"VI"
 				"VII"
 				"VIII"
@@ -32,11 +32,11 @@
 		enable = true;
 		keybindings = {
 			"super + alt + {q,r}" = "bspc {quit,vm-r}";
-			"super + shift + w"   = "bspc node -c";
+			"super + shift + q"   = "bspc node -c";
 			"super + shfit + {h,j,k,l}" = "bspc node -s {west,south,north,east}";
 			"super + {h,j,k,l}" = "bspc node -f {west,south,north,east}";
 			"super + {1-9,0}" = "bspc desktop -f '^{1-9,10}'";
-			"super + shift + {1-9,0" = "bspc node -d '^{1-9,10}'";
+			"super + shift + {1-9,0}" = "bspc node -d '^{1-9,10}'";
 			"super + shift + f" = "bspc node -t fullscreen";
 			"super + Return" = "exec alacritty";
 			"super + @d" = "exec rofi -show drun";
