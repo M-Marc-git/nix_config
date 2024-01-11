@@ -1,6 +1,3 @@
-local M = {}
-
-function M.setup()
 	local builtin = require("telescope.builtin")
 	vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 	vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
@@ -13,6 +10,3 @@ function M.setup()
 	vim.api.nvim_set_hl(0, "NormalFloat", {bg="#1a1b26"})
 	vim.api.nvim_set_hl(0, "TelescopeNormal", {bg="#1a1b26"})
 	vim.api.nvim_set_hl(0, "TelescopeBorder", {bg="#1a1b26"})
-end
-
-return M

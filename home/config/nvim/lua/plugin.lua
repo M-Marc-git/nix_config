@@ -1,6 +1,3 @@
-local M = {}
-
-	function M.setup()
 	local lazy_path = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 	if not vim.loop.fs_stat(lazy_path) then
 		vim.fn.system({
@@ -54,6 +51,4 @@ local M = {}
 			}
 		},
 	})
-end
 
-return M

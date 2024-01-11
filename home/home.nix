@@ -7,6 +7,11 @@
 		./config/config.nix
 		./programs.nix
 	];
+
+	home.packages = with pkgs; [
+		(nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+	];
+
 	programs.home-manager.enable = true;
 	home.stateVersion = "24.05";
 }
