@@ -1,6 +1,6 @@
-vim.opt.cursorline = true;
-vim.opt.clipboard = "unnamedplus"
-vim.opt.number = true
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = false
+require("plugin").setup()
+
+require("setup_global").setup()
+require("setup_lsp").setup()
+require("setup_telescope").setup()
+require("bubbles").setup()
