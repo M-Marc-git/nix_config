@@ -1,8 +1,9 @@
-{inputs, config, pkgs, arch, host_name, user, ...} :
+{inputs, config, pkgs, lib, arch, host_name, user, ...} :
 {
-	programs.polybar = {
+	services.polybar = {
 		enable = true;
-		extraConfig = lib.fileContents ./polybar/main.ini;
+		extraConfig = ''${lib.fileContents ./polybar/main.ini}'';
+		script = "polybar main &";
 	};
 }
 
