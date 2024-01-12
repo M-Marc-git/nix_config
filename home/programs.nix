@@ -10,6 +10,11 @@
 		hunspellDicts.en_US
 		xournal
 
+		# Image
+		feh
+		gimp
+		krita
+
 		# Build system
 		autoconf
 		autoconf-archive

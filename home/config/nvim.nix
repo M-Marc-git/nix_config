@@ -36,6 +36,7 @@
 			${lib.fileContents ./nvim/setup_lsp.lua}
 			${lib.fileContents ./nvim/setup_telescope.lua}
 			${lib.fileContents ./nvim/lualine.lua}
+			${lib.fileContents ./nvim/autopairs.lua}
 		'';
 	};
 }

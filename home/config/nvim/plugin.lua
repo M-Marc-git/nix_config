@@ -28,6 +28,9 @@ require("lazy").setup(
 		}
 	},
 	{
+		"windwp/nvim-autopairs"
+	},
+	{
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v3.x',
 		dependencies = {
