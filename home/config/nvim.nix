@@ -14,11 +14,11 @@
 			colorscheme base16-scheme
 		'';
 		extraLuaConfig = ''
-			${lib.fileContents ./nvim/init.lua}
-			${lib.fileContents ./nvim/lua/plugin.lua}
-			${lib.fileContents ./nvim/lua/setup_global.lua}
-			${lib.fileContents ./nvim/lua/setup_lsp.lua}
-			${lib.fileContents ./nvim/lua/setup_telescope.lua}
+			${lib.fileContents ./nvim/plugin.lua}
+			${lib.fileContents ./nvim/setup_global.lua}
+			${lib.fileContents ./nvim/setup_lsp.lua}
+			${lib.fileContents ./nvim/setup_telescope.lua}
+			${lib.fileContents ./nvim/lualine.lua}
 			vim.api.nvim_set_hl(0, "FloatBorder", {bg="#${config.scheme.base00}"})
 			vim.api.nvim_set_hl(0, "NormalFloat", {bg="#${config.scheme.base00}"})
 			vim.api.nvim_set_hl(0, "TelescopeNormal", {bg="#${config.scheme.base00}"})
