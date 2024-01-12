@@ -25,6 +25,7 @@
 
 		extraConfig = ''
 			pgrep -x sxhkd > /dev/null || sxhkd &
+			polybar main &
 		'';
 	};
 

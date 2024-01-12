@@ -8,6 +8,7 @@
 		libreoffice-qt
 		hunspell
 		hunspellDicts.en_US
+		xournal
 
 		# Build system
 		autoconf
@@ -35,5 +36,6 @@
 		pkg-config
 		discord
 		alacritty
+		i3lock
 	];
 }
