@@ -35,7 +35,6 @@
 		doxygen
 		pkg-config
 		discord
-		alacritty
 		i3lock
 	];
 }
