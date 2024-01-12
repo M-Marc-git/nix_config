@@ -2,21 +2,47 @@
 {
 	programs.alacritty = {
 		enable = true;
-#		settings.colors = config.scheme.withHashtag; let default = {
-#			black = base00; white = base07;
-#			inherit red green yellow blue cyan magenta;
-#		}; in {
-#			primary = { 
-#				background = base00; 
-#				foreground = base07;
-#			};
-#			cursor = {
-#				text = base02;
-#				cursor = base07;
-#			};
-#			normal = default;
-#			bright = default;
-#			dim = default;
-#		};
+		settings = {
+			colors = {
+				primary = {
+					background = "#${config.scheme.base00}";
+					foreground = "#${config.scheme.base07}";
+				};
+				cursor = {
+					text = "#${config.scheme.base02}";
+					cursor = "#${config.scheme.base07}";
+				};
+				normal = {
+					black = "#${config.scheme.base00}";
+					white = "#${config.scheme.base07}";
+					blue = "#${config.scheme.blue}";
+					cyan = "#${config.scheme.cyan}";
+					green = "#${config.scheme.green}";
+					magenta = "#${config.scheme.magenta}";
+					red = "#${config.scheme.red}";
+					yellow = "#${config.scheme.yellow}";
+				};
+				bright = {
+					black = "#${config.scheme.base00}";
+					white = "#${config.scheme.base07}";
+					blue = "#${config.scheme.blue}";
+					cyan = "#${config.scheme.cyan}";
+					green = "#${config.scheme.green}";
+					magenta = "#${config.scheme.magenta}";
+					red = "#${config.scheme.red}";
+					yellow = "#${config.scheme.yellow}";
+				};
+				dim = {
+					black = "#${config.scheme.base00}";
+					white = "#${config.scheme.base07}";
+					blue = "#${config.scheme.blue}";
+					cyan = "#${config.scheme.cyan}";
+					green = "#${config.scheme.green}";
+					magenta = "#${config.scheme.magenta}";
+					red = "#${config.scheme.red}";
+					yellow = "#${config.scheme.yellow}";
+				};
+			};
+		};
 	};
 }
