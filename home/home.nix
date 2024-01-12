@@ -10,8 +10,11 @@
 
 	home.packages = with pkgs; [
 		(nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+		ipafont
+		kochi-substitute
 	];
 
+	fonts.fontconfig.enable = true;
 	programs.home-manager.enable = true;
 	home.stateVersion = "24.05";
 }

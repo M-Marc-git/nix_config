@@ -4,18 +4,18 @@
 		enable = true;
 		monitors = {
 			DisplayPort-0 = [
-				"I"
-				"II"
-				"III"
-				"IV"
-				"V"
+				"一"
+				"二"
+				"三"
+				"四"
+				"五"
 			];
 			DisplayPort-1 = [
-				"VI"
-				"VII"
-				"VIII"
-				"IX"
-				"X"
+				"六"
+				"七"
+				"八"
+				"九"
+				"十"
 			];
 		};
 
@@ -44,7 +44,8 @@
 			"super + {h,j,k,l}" = "bspc node -f {west,south,north,east}";
 			"super + {1-9,0}" = "bspc desktop -f '^{1-9,10}'";
 			"super + shift + {1-9,0}" = "bspc node -d '^{1-9,10}'";
-			"super + f" = "bspc window -t \\~fullscreen";
+			"super + f" = "bspc node -t \\~floating";
+			"super + f" = "bspc node -t \\~fullscreen";
 			"super + Return" = "exec alacritty";
 			"super + @d" = "exec rofi -show drun";
 		};
