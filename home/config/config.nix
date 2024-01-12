@@ -4,5 +4,6 @@
 		./bspwm.nix
 		./nvim.nix
 		./rofi.nix
+		./git.nix
 	];
 }
