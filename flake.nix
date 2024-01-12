@@ -18,7 +18,7 @@
 		arch = "x86_64-linux";
 		host_name = "beta";
 		user = "marc";
-		theme = "everforest";
+		theme = "catppuccin-frappe";
 		scheme = "${inputs.base16-schemes}/${theme}.yaml";
 	in {
 		nixosConfigurations.${host_name} = nixpkgs.lib.nixosSystem {
