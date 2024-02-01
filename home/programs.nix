@@ -15,6 +15,9 @@
 		gimp
 		krita
 
+		# 3d
+		blender
+
 		# Build system
 		autoconf
 		autoconf-archive

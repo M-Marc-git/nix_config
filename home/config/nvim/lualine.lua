@@ -29,7 +29,6 @@ require('lualine').setup {
 				b = {
 				},
 				c = {
-					bg = colors.gray
 				},
 				x = {
 				},
