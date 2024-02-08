@@ -2,6 +2,7 @@
 {
 	time.timeZone = "Europe/Paris";
 	networking.hostName = host_name;
+	networking.networkmanager.enable = true;
 
 	hardware.pulseaudio = {
 		enable = true;
