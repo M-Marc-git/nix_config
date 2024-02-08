@@ -9,6 +9,7 @@
 		hunspell
 		hunspellDicts.en_US
 		xournal
+		calibre
 
 		# Image
 		feh

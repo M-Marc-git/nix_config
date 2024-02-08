@@ -1,0 +1,14 @@
+
+entry {
+	placeholder: "";
+	cursor: pointer;
+}
+
+element {
+	orientation: horizontal;
+	children: [
+		element-icon,
+		element-text
+	];
+	spacing: 5px;
+}
