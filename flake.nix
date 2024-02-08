@@ -29,7 +29,8 @@
 				inherit host_name;
 			};
 			modules = [
-				./system/${host_name}/hardware_configuration.nix
+				./system/${host_name}/hardware-configuration.nix
+				./system/${host_name}/specific.nix
 				./system/configuration.nix
 			];
 		};
