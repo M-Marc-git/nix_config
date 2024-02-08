@@ -2,22 +2,6 @@
 {
 	xsession.windowManager.bspwm = {
 		enable = true;
-		monitors = {
-			DisplayPort-0 = [
-				"一"
-				"二"
-				"三"
-				"四"
-				"五"
-			];
-			DisplayPort-1 = [
-				"六"
-				"七"
-				"八"
-				"九"
-				"十"
-			];
-		};
 
 		settings = {
 			normal_border_color = "#${config.scheme.base04}";
@@ -50,4 +34,8 @@
 			"super + @d" = "exec rofi -show drun";
 		};
 	};
+
+	imports = [
+		(builtins.toString ./. + "/" + host_name + "/bspwm.nix")
+	];
 }

@@ -8,26 +8,6 @@
 		enable = true;
 		support32Bit = true;
 	};
-
-	systemd.tmpfiles.rules = [
-		"L+    /opt/rocm/hip   -    -    -    -    ${pkgs.rocmPackages.clr}"
-	];
-
-	hardware.opengl = {
-		extraPackages = with pkgs; [
-			rocmPackages.clr.icd
-		];
-		driSupport = true;
-		driSupport32Bit = true;
-	};
-
-	services = {
-		xserver = {
-			enable = true;
-			videoDrivers = [ "amdgpu" ];
-			displayManager.startx.enable = true;
-		};
-	};
 	
 	environment.systemPackages = with pkgs; [
 		firefox

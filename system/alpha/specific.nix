@@ -5,7 +5,15 @@
 		device = "/dev/sda";
 	};
 	boot.initrd.kernelModules = [
-		"amdgpu"
+		"radeon"
 	];
+	
+	services = {
+		xserver = {
+			enable = true;
+			videoDrivers = [ "radeon" ];
+			displayManager.startx.enable = true;
+		};
+	};
 }
 
