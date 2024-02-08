@@ -1,8 +1,5 @@
 { config, lib, pkgs, arch, host_name, ... }:
 {
-	imports = [
-		./hardware-configuration.nix
-	];
 
 	boot.loader.systemd-boot.enable = true;
 	boot.initrd.kernelModules = [

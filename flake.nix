@@ -16,7 +16,7 @@
 	outputs = { self, nixpkgs, home-manager, ...}@inputs : 
 	let 
 		arch = "x86_64-linux";
-		host_name = "beta";
+		host_name = "alpha";
 		user = "marc";
 		theme = "catppuccin-frappe";
 		scheme = "${inputs.base16-schemes}/${theme}.yaml";
@@ -29,6 +29,7 @@
 				inherit host_name;
 			};
 			modules = [
+				./system/${host_name}/hardware_configuration.nix
 				./system/configuration.nix
 			];
 		};
