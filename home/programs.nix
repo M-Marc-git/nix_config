@@ -32,6 +32,8 @@
 		gcc
 		binutils
 		lldb
+		gdb
+		rustup
 
 		# Interpretor
 		python3
@@ -45,5 +47,6 @@
 		pkg-config
 		discord
 		i3lock
+		vscodium
 	];
 }
