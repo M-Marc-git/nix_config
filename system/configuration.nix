@@ -15,10 +15,16 @@
 		vim
 	];
 
+	virtualisation.docker.enable = true;
+
 	users.users.marc = {
 		isNormalUser = true;
 		home = "/home/marc";
-		extraGroups = [ "wheel" "audio" ];
+		extraGroups = [ 
+			"wheel" 
+			"audio" 
+			"docker"
+		];
 	};
 
 	# Enable flakes

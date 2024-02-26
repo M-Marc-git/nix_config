@@ -3,6 +3,7 @@
 	home.packages = with pkgs; [
 		# Bureautique
 		firefox
+		chromium
 		thunderbird
 		onlyoffice-bin
 		libreoffice-qt
@@ -31,6 +32,8 @@
 		# Compiler
 		gcc
 		binutils
+		(hiPrio clang)
+		llvmPackages.bintools
 		lldb
 		gdb
 		rustup
@@ -48,5 +51,8 @@
 		discord
 		i3lock
 		vscodium
+
+		# Java
+		openjdk8
 	];
 }
