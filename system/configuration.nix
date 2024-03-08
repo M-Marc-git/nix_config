@@ -9,7 +9,7 @@
 		support32Bit = true;
 	};
 
-	import = [
+	imports = [
 		./programs.nix
 	];
 

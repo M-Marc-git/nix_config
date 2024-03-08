@@ -2,9 +2,6 @@
 {
 	programs.bash = {
 		enable = true;
-		bashrcExtra = ''
-		export DOTNET_ROOT="${pkgs.dotnet-sdk_8}"
-		'';
 	};
 }
 

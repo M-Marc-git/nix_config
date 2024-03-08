@@ -2,7 +2,7 @@
 {
 	imports = [
 		./java.nix
-		./csharp.nix
+		# ./csharp.nix
 	];
 }
 
