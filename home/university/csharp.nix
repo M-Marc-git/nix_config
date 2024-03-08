@@ -1,9 +1,11 @@
 {inputs, config, pkgs, ...} :
 {
 	home.packages = with pkgs; [
-		mono
+		(hiPrio dotnet-sdk_8)
 		msbuild
-		dotnet-sdk_8
+		csharp-ls
 	];
+
+	home.sessionVariables.DOTNET_ROOT = pkgs.dotnet-sdk_8;
 }
 

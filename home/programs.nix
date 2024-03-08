@@ -51,8 +51,5 @@
 		discord
 		i3lock
 		vscodium
-
-		# Java
-		openjdk8
 	];
 }

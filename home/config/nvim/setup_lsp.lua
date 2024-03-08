@@ -41,6 +41,7 @@ require("lspconfig").clangd.setup({
 		"cpp", "hpp", "inl"
 	}
 })
+
 require("lspconfig").rust_analyzer.setup({
 	keys = {
 	},
@@ -63,6 +64,33 @@ require("lspconfig").rust_analyzer.setup({
 	},
 	filetypes = {
 		"rs"
+	}
+})
+
+require("lspconfig").jdtls.setup ({
+	cmd = {'jdtls'},
+	root_dir = function(fname)
+		return require("lspconfig.util").root_pattern(
+			'build.xml',
+			'pom.xml',
+			'settings.gradle',
+			'settings.gradle.kts',
+			'build.gradle',
+			'build.gradle.kts'
+		)(fname) or require("lspconfig.utils").find_git_ancestor(fname)
+	end,
+	filetypes = {
+		"java"
+	}
+})
+
+require("lspconfig").csharp_ls.setup({
+	cmd = {"csharp-ls"},
+	filetypes = {
+		"cs"
+	},
+	init_options = {
+		AutomaticWorkspaceInit = true
 	}
 })
 
