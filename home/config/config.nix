@@ -2,6 +2,7 @@
 {
 	imports = [
 		./alacritty.nix
+		./bash.nix
 		./bspwm.nix
 		./nvim.nix
 		./polybar.nix
