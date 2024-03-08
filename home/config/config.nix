@@ -4,6 +4,7 @@
 		./alacritty.nix
 		./bash.nix
 		./bspwm.nix
+		./dunst.nix
 		./nvim.nix
 		./polybar.nix
 		./rofi.nix
