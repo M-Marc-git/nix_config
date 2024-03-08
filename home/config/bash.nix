@@ -2,9 +2,9 @@
 {
 	programs.bash = {
 		enable = true;
-		sessionVariables = {
-			DOTNET_SDK = "${pkgs.dotnet-sdk_8}"
-		}
+		bashrcExtra = ''
+		export DOTNET_ROOT="${pkgs.dotnet-sdk_8}"
+		'';
 	};
 }
 

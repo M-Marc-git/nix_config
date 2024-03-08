@@ -8,11 +8,9 @@
 		enable = true;
 		support32Bit = true;
 	};
-	
-	environment.systemPackages = with pkgs; [
-		firefox
-		git
-		vim
+
+	import = [
+		./programs.nix
 	];
 
 	virtualisation.docker.enable = true;
