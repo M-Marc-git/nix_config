@@ -13,7 +13,10 @@
 		./programs.nix
 	];
 
-	virtualisation.docker.enable = true;
+	virtualisation = {
+		docker.enable = true;
+		waydroid.enable = true;
+	};
 
 	users.users.marc = {
 		isNormalUser = true;
