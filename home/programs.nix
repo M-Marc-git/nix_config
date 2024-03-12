@@ -31,6 +31,8 @@
 		# Compiler
 		gcc
 		binutils
+		(hiPrio clang)
+		llvmPackages.bintools
 		lldb
 		gdb
 		rustup
@@ -48,5 +50,7 @@
 		discord
 		i3lock
 		vscodium
+		gnupg
+		pinentry
 	];
 }
