@@ -3,6 +3,7 @@
 	home.packages = with pkgs; [
 		# Bureautique
 		firefox
+		chromium
 		thunderbird
 		onlyoffice-bin
 		libreoffice-qt

@@ -5,6 +5,7 @@
 
 	imports = [
 		./config/config.nix
+		./university/university.nix
 		./programs.nix
 	];
 

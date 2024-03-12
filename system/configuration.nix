@@ -8,17 +8,24 @@
 		enable = true;
 		support32Bit = true;
 	};
-	
-	environment.systemPackages = with pkgs; [
-		firefox
-		git
-		vim
+
+	imports = [
+		./programs.nix
 	];
+
+	virtualisation = {
+		docker.enable = true;
+		waydroid.enable = true;
+	};
 
 	users.users.marc = {
 		isNormalUser = true;
 		home = "/home/marc";
-		extraGroups = [ "wheel" "audio" ];
+		extraGroups = [ 
+			"wheel" 
+			"audio" 
+			"docker"
+		];
 	};
 
 	# Enable flakes

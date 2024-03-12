@@ -3,6 +3,7 @@
 	programs.alacritty = {
 		enable = true;
 		settings = {
+			window.opacity = 0.7;
 			colors = {
 				primary = {
 					background = "#${config.scheme.base00}";
