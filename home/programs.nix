@@ -51,5 +51,7 @@
 		discord
 		i3lock
 		vscodium
+
+		jetbrains.clion
 	];
 }

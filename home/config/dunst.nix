@@ -16,7 +16,7 @@
   			urgency_normal = {
     			background = "#37474f";
 			    foreground = "#eceff1";
-   				timeout = 1;
+   				timeout = 10;
   			};
 		};
 

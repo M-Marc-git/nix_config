@@ -25,7 +25,8 @@
 		xserver = {
 			enable = true;
 			videoDrivers = [ "amdgpu" ];
-			displayManager.startx.enable = true;
+			displayManager.sddm.enable = true;
+			desktopManager.plasma5.enable = true;
 		};
 	};
 }

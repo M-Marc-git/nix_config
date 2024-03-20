@@ -16,6 +16,7 @@
 			xsetroot -solid "#${config.scheme.base00}"
 			pgrep -x sxhkd > /dev/null || sxhkd &
 			polybar main &
+			dunst &
 		'';
 	};
 

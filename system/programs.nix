@@ -6,13 +6,14 @@
 		firefox
 
 		# Csharp
-		dotnet-sdk_8
 		mono
 		msbuild
 		csharp-ls
+		omnisharp-roslyn
+		fsautocomplete
 	];
 
 	environment.variables = {
-		DOTNET_ROOT = "${pkgs.dotnet-sdk_8}";
+		DOTNET_ROOT = "${pkgs.mono}/lib/mono/4.8-api";
 	};
 }
