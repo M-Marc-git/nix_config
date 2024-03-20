@@ -43,28 +43,25 @@ require("lspconfig").clangd.setup({
 })
 
 require("lspconfig").rust_analyzer.setup({
-	keys = {
-	},
-	settings = {
-		["rust-analyzer"] = {
-			cargo = {
-				allFeatures = true,
-				command = "clippy",
-				extraArgs = { "--no-deps" }
-			},
-			procMacro = {
-				enable = true,
-				ignored = {
-					["async-trait"] = {"async_trait"},
-					["napi-derive"] = {"napi"},
-					["async-recursion"] = {"async_recursion" }
-				},
-			},
-		},
-	},
-	filetypes = {
-		"rs"
-	}
+    on_attach = on_attach,
+    settings = {
+        ["rust-analyzer"] = {
+            imports = {
+                granularity = {
+                    group = "module",
+                },
+                prefix = "self",
+            },
+            cargo = {
+                buildScripts = {
+                    enable = true,
+                },
+            },
+            procMacro = {
+                enable = true
+            },
+        }
+    }
 })
 
 require("lspconfig").jdtls.setup ({
@@ -92,6 +89,12 @@ require("lspconfig").csharp_ls.setup({
 	init_options = {
 		AutomaticWorkspaceInit = true
 	}
+})
+
+require('lspconfig').fsautocomplete.setup({
+	cmd = { "fsautocomplete", "--adaptive-lsp-server-enabled" },
+	filetypes = { "fsharp" },
+	init_options = { AutomaticWorkspaceInit = true }
 })
 
 local cmp = require("cmp")
