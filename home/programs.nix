@@ -42,9 +42,6 @@
 		python3
 
 		# Utils
-		qemu
-		libvirt
-		virt-manager
 		clang-tools
 		doxygen
 		pkg-config
@@ -53,5 +50,6 @@
 		vscodium
 
 		jetbrains.clion
+		jetbrains.idea-community
 	];
 }

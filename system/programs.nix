@@ -1,6 +1,11 @@
 { config, lib, pkgs, arch, host_name, ... }:
 {
 	environment.systemPackages = with pkgs; [
+		qemu
+		libvirt
+		virt-manager
+		OVMFFull
+
 		git
 		neovim
 		firefox
