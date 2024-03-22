@@ -51,5 +51,8 @@
 
 		jetbrains.clion
 		jetbrains.idea-community
+
+		gnupg
+		pinentry
 	];
 }
