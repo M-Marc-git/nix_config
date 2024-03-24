@@ -5,6 +5,8 @@
 		libvirt
 		virt-manager
 		OVMFFull
+		bspwm
+		sxhkd
 
 		git
 		neovim

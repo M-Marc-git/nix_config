@@ -9,6 +9,6 @@
 		./polybar.nix
 		./rofi.nix
 		./git.nix
-		./hyprland.nix
+#		./hyprland.nix
 	];
 }

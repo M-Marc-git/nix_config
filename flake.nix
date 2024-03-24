@@ -1,6 +1,6 @@
 {
 	inputs = {
-		hyprland.url = "github:hyprwm/Hyprland";
+#		hyprland.url = "github:hyprwm/Hyprland";
 		nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 		home-manager.url = "github:nix-community/home-manager";
 		base16.url = "github:SenchoPens/base16.nix";
