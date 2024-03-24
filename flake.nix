@@ -17,7 +17,7 @@
 	outputs = { self, nixpkgs, home-manager, ...}@inputs : 
 	let 
 		arch = "x86_64-linux";
-		host_name = "alpha";
+		host_name = "beta";
 		user = "marc";
 		theme = "catppuccin-frappe";
 		scheme = "${inputs.base16-schemes}/${theme}.yaml";
