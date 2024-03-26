@@ -26,7 +26,12 @@
 			enable = true;
 			videoDrivers = [ "amdgpu" ];
 			displayManager.sddm.enable = true;
-			desktopManager.plasma5.enable = true;
+			desktopManager = {
+				plasma5.enable = true;
+			};
+			windowManager = {
+				bspwm.enable = true;
+			};
 		};
 	};
 }
